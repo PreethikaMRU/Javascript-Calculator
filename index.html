@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><b>A JAVASCRIPT CALCULATOR</b></h1>
+        </header>
+        <main>
+            <div class="display">
+                <input id="display" name="display">
+            </div>
+            <div class="typePad">
+                <div class="table">
+                    <div id="clrscrn" name="clrscrn" class="col1" onclick="clearScreen()"><p>AC</p></div>
+                    <div id="removeLast" name="removeLast" class="col2" onclick="removeLast()"><p>B</p></div>
+                    <div id="%" name="%" class="col3" onclick="handleClick(String('%'))"><p>%</p></div>
+                    <div id="/" name="/" class="col4" onclick="handleClick(String('/'))"><p>/</p></div>
+
+                    <div id="7" name="7" class="col1" onclick="handleClick(7)"><p>7</p></div>
+                    <div id="8" name="8" class="col2" onclick="handleClick(8)"><p>8</p></div>
+                    <div id="9" name="9" class="col3" onclick="handleClick(9)"><p>9</p></div>
+                    <div id="*" name="*" class="col4" onclick="handleClick(String('*'))"><p>X</p></div>
+
+                    <div id="4" name="4" class="col1" onclick="handleClick(4)"><p>4</p></div>
+                    <div id="5" name="5" class="col2" onclick="handleClick(5)"><p>5</p></div>
+                    <div id="6" name="6" class="col3" onclick="handleClick(6)"><p>6</p></div>
+                    <div id="-" name="-" class="col4" onclick="handleClick(String('-'))"><p>-</p></div>
+
+                    <div id="1" name="1" class="col1" onclick="handleClick(1)"><p>1</p></div>
+                    <div id="2" name="2" class="col2" onclick="handleClick(2)"><p>2</p></div>
+                    <div id="3" name="3" class="col3" onclick="handleClick(3)"><p>3</p></div>
+                    <div id="+" name="+" class="col4" onclick="handleClick(String('+'))"><p>+</p></div>
+
+                    <div id="00" name="00" class="col1" onclick="handleClick('00')"><p>00</p></div>
+                    <div id="0" name="0"  class="col2" onclick="handleClick(0)"><p>0</p></div>
+                    <div id="=" name="=" class="col5" onclick="performAction()"><p>=</p></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>by Preethika</p>
+        </footer>
+      
+        
+        <script src="calc.js"></script>
+    </body>
+</html>
+

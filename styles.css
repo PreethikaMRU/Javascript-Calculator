@@ -1,0 +1,139 @@
+body{
+    background-color: #1e1e1e;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: 'Nerko One', cursive;
+}
+
+
+
+h1{
+    font-size: 2rem;
+    font-style: italic;
+    color: white;
+    margin: -0.5rem;
+}
+
+
+.display{
+    cursor:text;
+    
+}
+
+input{
+    font-family: 'Nerko One', cursive;
+    height: 50px;
+    width: 90%;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 10px;
+    background-color: #D6E4E5;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* @media screen and (max-width:800px) {
+    body{
+        width: 100%;
+    }
+    input{
+        font-size: 7vh;
+    }
+} */
+
+main{
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+
+
+.table{
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: repeat(4,minmax(70px,400px));
+    padding: 2rem;
+}
+
+.table > div:first-child:hover{
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.table > div:nth-child(2):hover{
+    background-color: darkred;
+    border-color: darkred;
+}
+
+
+.table > div:last-child:hover{
+    background-color: green;
+    border-color: green;
+}
+
+.table > div{
+    background-color: #EFF5F5;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #EFF5F5;
+    color: #497174;
+}
+
+.table > div:hover{
+    
+    background-color: #497174;
+    border-color: #497174;
+}
+
+.table > div:active{
+    transform: scale(0.9);
+    transition: transform 0.75s;
+}
+
+.col1{
+    grid-column: 1;
+}
+
+.col2{
+    grid-column: 2;
+}
+
+.col3{
+    grid-column: 3;
+}
+
+.col4{
+    grid-column: 4;
+}
+
+.col5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.table p{
+    margin: -0.5rem 0rem;  
+    color: #EB6440;
+    padding: 1rem;
+}
+
+.table p:hover{
+    color: white;
+}
+
+footer p{
+    color: white;
+}
+
+
+
+
+
