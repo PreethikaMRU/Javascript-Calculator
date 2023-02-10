@@ -2,7 +2,6 @@ body{
     background-color: #1e1e1e;
     top: 50%;
     left: 50%;
-    width: 90%;
     position: absolute;
     text-align: center;
     transform: translate(-50%,-50%);
